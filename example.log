@@ -1,0 +1,114 @@
+INFO:root:Start:
+INFO:root:find_functions: (InStr(Result,"LINE 2 OF MESSAGE")>0)And((InStr(Result,"LINE 7 OF MESSAGE")>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_function_call: InStr(Result,"LINE 2 OF MESSAGE")
+INFO:root:find_functions: (#VALUE#>0)And((InStr(Result,"LINE 7 OF MESSAGE")>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#>0)
+INFO:root:evaluate_plain_expression: "#VALUE#>0"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: ">"
+DEBUG:root:analyze_identifier_reference: "0"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:find_functions: #VALUE#And((InStr(Result,"LINE 7 OF MESSAGE")>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_function_call: InStr(Result,"LINE 7 OF MESSAGE")
+INFO:root:find_functions: #VALUE#And((#VALUE#>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#>0)
+INFO:root:evaluate_plain_expression: "#VALUE#>0"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: ">"
+DEBUG:root:analyze_identifier_reference: "0"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:find_functions: #VALUE#And(#VALUE#)And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#)
+INFO:root:evaluate_plain_expression: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+INFO:root:find_functions: #VALUE#And #VALUE#And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_function_call: InStr(Result,"MESSAGE INCOMPLETE")
+INFO:root:find_functions: #VALUE#And #VALUE#And((#VALUE#>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#>0)
+INFO:root:evaluate_plain_expression: "#VALUE#>0"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: ">"
+DEBUG:root:analyze_identifier_reference: "0"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:find_functions: #VALUE#And #VALUE#And(#VALUE#)
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#)
+INFO:root:evaluate_plain_expression: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+INFO:root:find_functions: #VALUE#And #VALUE#And #VALUE#
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+INFO:root:evaluate_plain_expression: "#VALUE#And #VALUE#And #VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "And"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:evaluate_plain_expression: "#VALUE#And #VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "And"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+DEBUG:root:find_functions: #VALUE#
+INFO:root:Start:
+INFO:root:find_functions: (InStr(Result,"LINE 2 OF MESSAGE")>0)And((InStr(Result,"LINE 7 OF MESSAGE")>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_function_call: InStr(Result,"LINE 2 OF MESSAGE")
+INFO:root:find_functions: (#VALUE#>0)And((InStr(Result,"LINE 7 OF MESSAGE")>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#>0)
+INFO:root:evaluate_plain_expression: "#VALUE#>0"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: ">"
+DEBUG:root:analyze_identifier_reference: "0"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:find_functions: #VALUE#And((InStr(Result,"LINE 7 OF MESSAGE")>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_function_call: InStr(Result,"LINE 7 OF MESSAGE")
+INFO:root:find_functions: #VALUE#And((#VALUE#>0))And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#>0)
+INFO:root:evaluate_plain_expression: "#VALUE#>0"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: ">"
+DEBUG:root:analyze_identifier_reference: "0"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:find_functions: #VALUE#And(#VALUE#)And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#)
+INFO:root:evaluate_plain_expression: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+INFO:root:find_functions: #VALUE#And #VALUE#And((InStr(Result,"MESSAGE INCOMPLETE")>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_function_call: InStr(Result,"MESSAGE INCOMPLETE")
+INFO:root:find_functions: #VALUE#And #VALUE#And((#VALUE#>0))
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#>0)
+INFO:root:evaluate_plain_expression: "#VALUE#>0"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: ">"
+DEBUG:root:analyze_identifier_reference: "0"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:find_functions: #VALUE#And #VALUE#And(#VALUE#)
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+DEBUG:root:analyze_parents: (#VALUE#)
+INFO:root:evaluate_plain_expression: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+INFO:root:find_functions: #VALUE#And #VALUE#And #VALUE#
+INFO:root:find_functions:regex_string: (((\*|\/|\+|-|mod|\&|\\|\^|=|=|<>|\<|\>|<=|>=|is|\&|\+|xor|or|and|imp|eqv|not)|((\w+\.)?(\w+)))?\s*(\([^()]*\)))
+INFO:root:evaluate_plain_expression: "#VALUE#And #VALUE#And #VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "And"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+INFO:root:evaluate_plain_expression: "#VALUE#And #VALUE#"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:analyze_identifier_reference: "And"
+DEBUG:root:analyze_identifier_reference: "#VALUE#"
+DEBUG:root:return_value_of_expression: "#VALUE#", "#OPERATOR#", "#VALUE#"
+DEBUG:root:find_functions: #VALUE#

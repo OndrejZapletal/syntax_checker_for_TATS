@@ -1,0 +1,94 @@
+Call DeviceInit(DEVICE, Object)
+Call DeviceStop(Object)
+Call EndScenario()
+Call EndTestHeader()
+Call Object.ActivateCMF()
+Call Object.GetHDPParam(HDP_AMI_VALID, HDP_AMI_VALID_VALIDITY, HDP_AMI_VALID_MODIFIED, HDP_AMI_VALID_DATA)
+Call Object.ParsedASCBData(DataType, MsgData, MsgSize)
+Call Object.PushButton(BUTTON, "")
+Call Object.PushButton(BUTTON, Test_Message)
+Call Object.ResetScratchPadStack()
+Call Object.Reset_CMF_Queue()
+Call Object.SendDownlink(Test_Message)
+Call Object.SendDownlink(Test_Message, FALSE)
+Call Object.SendDownlink(Test_Message, Len(Test_Message))
+Call Object.SendDownlink(Test_Message, True)
+Call Object.SetACKTimer(0)
+Call Object.SetDestination("string")
+Call Object.SetGSIF("")
+Call Object.SetToComm()
+Call Object.Set_GS_Address(GS_ARINC)
+Call Object.Set_SQP_Value (0)
+Call Object.Set_VDR_COMM()
+Call Object.ShowScreen(False)
+Call Object.UpdateScrPaths()
+Call Object.WaitForMsg(0, "string")
+Call OutputLog (0, STR_MSG_FAIL & "string")
+Call OutputLog(0, "")
+Call OutputLog(0, "string" & InDataTemp)
+Call OutputLog(0, "string")
+Call OutputLog(0, STR_MSG_FAIL & "string")
+Call OutputLog(0, STR_MSG_PASS & "string")
+Call OutputLog(0,"string")
+Call OutputLog(0,STR_MSG_FAIL & "string")
+Call OutputLog(0,STR_MSG_PASS & "string")
+Call Put_File_To_Proc("string")
+Call Set_AMI_Invalid()
+Call Skip_of_midnight(0*0)
+Call StartScenario()
+Call StartScenarioHeader()
+Call TestBegin()
+Call TestEnd()
+Call Write (CiocalCabTermEquipID_1, 0)
+Delay 0
+Dim EndTime
+Dim Object
+Dim Object, Object
+Dim RecvResult
+Dim Res
+Dim Test_Message
+Dim VDRMode, VDRModeHDP
+Dim WaitForSendAck
+Dim count
+Dim iDelay, Status, DataType, MsgData, MsgSize, MsgId, lduSeq, lduType, vdrVersionReq, Reslt, InData, InDataTemp 'for VDR
+Dim sqTimer
+Do
+Else
+End If
+EndTime = Timer + 0
+Exit Do
+GS_ARINC = "string" 'DSP - 'ARINC', g/s 0
+If (APM_Init() = False) Then
+If (DataType = 0) Then ' Data type 0
+If (MsgSize < = 0) And (MsgSize > 0) And ((MsgSize Mod 0) = 0) Then
+If (Reslt) Then
+If (Timer > sqTimer) Then
+If (Timer>EndTime) Then
+If HDP_AMI_VALID_DATA = 0 Then
+If HDP_VHF_SUBNETWORK_TYPE_DATA <> 0 Then
+If Not Object.IsAvailable () Then
+If Not Object.IsAvailable() Then
+If RecvResult Then
+If RunOnBench () = True Then
+If Test_Message <> Object.GetMcduText(0, 0, 0) Then
+If Test_Message = Object.GetMcduText(0, 0, 0) Then
+If Timer > EndTime Then
+InData = Object.GetV3Data(MsgData, MsgSize)
+InDataTemp = ProcessString_for_VDR(InData, Len(InData))
+Loop
+Loop While count < 0
+OK = OK And VerifyWrite(ApmCabinTermInstalled_1, 0, "string")
+OK = True
+Object.Send_GSIF()
+Option Explicit
+RecvResult = Object.WaitDownlink("string")
+RecvResult = Object.WaitForMsg(0, "string")
+RecvResult = RecvResult And Object.WaitForMsg(0, "string")
+Reslt = Object.WaitV3Data(iDelay, Status, DataType, MsgData, MsgSize, MsgId, lduSeq, lduType, vdrVersionReq) ' Parsing data
+Restart_CMF()
+Test_Message = "string"
+VDRMode = 0
+count = 0
+count = count + 0
+iDelay = 0.0
+sqTimer = Timer + 0

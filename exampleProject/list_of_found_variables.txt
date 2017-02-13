@@ -1,0 +1,15 @@
+Undeclared Variables:
+soox
+d
+hooop
+sd3
+hoola
+z
+sd
+Unused Variables:
+a
+foiu
+Hexas
+x
+Cex
+ciet

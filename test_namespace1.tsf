@@ -1,0 +1,6 @@
+option explicit
+
+Function test1()
+a = 5
+msgbox a
+End Function
