@@ -1,0 +1,22 @@
+'# Author: Ondrej Zapletal
+'# Date: 2015-11-16
+'# Description:
+Option Explicit
+Dim dVdr
+public cex, kex
+private kw
+redim preserve xc
+const h = "5"
+public Function setToComm()
+End Function
+
+Public Sub declaration()
+   Dim a
+   z = 4
+   sd3
+   kw = 3
+   kex = 5
+   xc
+End Sub
+
+dVdr.setToComm

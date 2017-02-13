@@ -1,0 +1,23 @@
+'# Author: Ondrej Zapletal
+'# Date: 2015-11-16
+'# Description:
+Option Explicit
+a = 4
+b = "dfsjl"
+c = a + b
+soox = 22
+
+dim ls(1,2), _
+x, y_
+f, v
+ls = 54
+newFunction
+Function newFunction()
+   Dim x
+   Dim foiu
+   he
+End Function
+
+Class vdr
+
+End class
